@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="utf-8">
+    <title>Drugs </title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Jost', sans-serif;
+        }
+        
+        input[type=text] {
+            width: 80%;
+            padding: 12px;
+            border: 1px solid rgb(177, 50, 149);
+            border-radius: 20px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        .horizintal-line {
+            border-bottom: 1px solid #696969;
+            margin: 10px 5px;
+            width: 100%;
+        }
+        
+        .vertical-line {
+            display: inline-block;
+            border-left: 1px solid black;
+            margin: 0 10px;
+            height: 60px;
+        }
+        
+        .page-container {
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        .side-nav-container {
+            width: 20%;
+            border-right: 1px solid rgb(24, 23, 23);
+            margin-right: 5%;
+            background-color: dimgray;
+            height: auto;
+            min-height: 100vh;
+        }
+        
+        .nav-list {
+            padding: 0;
+        }
+        
+        .nav-list li {
+            padding: 10px;
+            list-style: none;
+            color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
+        
+        .nav-list li:hover {
+            background: #5a5959;
+        }
+        
+        .nav-list li a {
+            color: white;
+            text-decoration: none;
+            margin-left: 4rem;
+        }
+        
+        .body-container {
+            width: 70%;
+        }
+        
+        img {
+            width: 120px;
+            border-radius: 30px;
+        }
+        
+        .default-section {
+            margin: 20px 0;
+        }
+        
+        .info-section {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        
+        .info-item {
+            border-right: 1px solid #696969;
+            width: 45%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 1rem;
+        }
+        
+        .info-item span {
+            margin-left: 4rem;
+        }
+        
+        select {
+            font-family: Cursive;
+            border: 1px solid rgb(24, 23, 23);
+            width: 140px;
+            height: 30px;
+            position: relative;
+            -moz-appearance: none;
+            color: black;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="page-container">
+        <div class="side-nav-container">
+            <ul class="nav-list">
+                <li>
+                    <img src="public/assets/drus.jpg" alt="Avatar" style="width: 50px;"><a href="/pharmacy.html"> View Drugs </a>
+                </li>
+                <li>
+                    <img src="public/assets/drus.jpg" alt="Avatar" style="width: 50px;"><a href="/AddnewPharmaceutical.html"> Add Drug </a>
+                </li>
+                <li>
+                    <img src="public/assets/drus.jpg" alt="Avatar" style="width: 50px;"><a href="/DeleteanPharmaceutical.html"> Delete Drug </a>
+                </li>
+                <li>
+                    <img src="public/assets/drus.jpg" alt="Avatar" style="width: 50px;"> <a href="/UpdateAnPharmaceutical.html">Update Drug </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="body-container">
+            <u> <h1>Drugs</h1> </u>
+            <section class="default-section">
+                <div class="information">
+                    <select name="nameofdrugs">
+                <option value="Doxal ">Doxal </option>
+                <option value="Lorax ">Lorax  </option>
+                <option value="Mepral">Mepral  </option>
+                <option value="Decort">Decort  </option>
+                <option value="Diamet">Diamet </option>
+                <option value="Diasix">Diasix </option>
+                <option value="Pepticum">Pepticum </option>
+                <option value="Rivoxar">Rivoxar </option>
+                <option value="Prozac">Prozac</option>
+            </select>
+                </div>
+            </section>
+            <section class="default-sectio">
+                <div class="info-section">
+                    <div class="info-item">
+                        <img src="public/assets/drus.jpg" alt="Avatar">
+                        <span>Doxal </span>
+                        <br> <br>
+                        <span>pills</span>
+                        <br>
+                        <span>Broqin Pharmacy</span>
+                        <br>
+                        <span class="horizintal-line"></span>
+                        <img src="public/assets/drus.jpg" alt="Avatar">
+                        <span>Doxal </span>
+                        <br> <br>
+                        <span>pills</span>
+
+                        <span>Al Rahma Pharmacy</span>
+                        <br>
+                    </div>
+
+
+
+            </section>
+            </div>
+        </div>
+
+</body>
+
+</html>

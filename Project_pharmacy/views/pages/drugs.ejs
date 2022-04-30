@@ -1,0 +1,52 @@
+<div class="body-container">
+    <u> <h1>Drugs</h1> </u>
+    <section class="default-section">
+        <div class="information">
+            <select name="nameofdrugs" onchange="location = `/drugs/${this.value}`">
+                  <% drugsNames.forEach(function (name) {  %>
+                     <% if(drugs && drugs.pharmaceuticalName === name) {%>
+                      <option selected value="<%= name %>"><%= name %></option>
+                      <% } else { %>
+                          <option value="<%= name %>"><%= name %></option>
+                      <% } %>
+              <% }) %>
+          </select>
+        </div>
+    </section>
+    <section class="default-section">
+        <% if (messages.error) { %>
+            <p class="alert alert-error">
+                <%= messages.error%>
+            </p>
+            <% }%>
+                <% if (messages.success) { %>
+                    <p class="alert alert-success">
+                        <%= messages.success%>
+                    </p>
+                    <% }%>
+    </section>
+    <section class="default-section">
+        <% if(drugs) { %>
+            <div class="info-section">
+                <div class="info-item">
+                    <img src="public/assets/drus.jpg" alt="Avatar">
+                    <span> <%= drugs.pharmaceuticalName %> </span>
+                </div>
+                <div class="info-item">
+                    <img src="public/assets/drus.jpg" alt="Avatar" />
+                    <span> <%= drugs.pharmacy_name %> </span>
+                </div>
+                <div class="info-item">
+                    <img src="public/assets/drus.jpg" alt="Avatar" />
+                    <span> <%= drugs.pharmaceuticalType %> </span>
+                </div>
+
+            </div>
+
+    </section>
+</div>
+</div>
+
+</body>
+
+</html>
